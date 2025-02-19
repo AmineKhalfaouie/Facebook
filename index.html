@@ -3,10 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" href="./assets/images/Facebook_f_logo_(2021).svg.png">
+    <title>Facebook</title>
+    <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+        rel="stylesheet"
+    />
     <link rel="stylesheet" href="./dist/style.css">
 </head>
 <body>
+    <div class="container">
+        <div data-include="views/nav"></div>
+        <div class="page-content-left" data-include="views/page-content/content-left" class="page-content"></div>
+        <div class="page-content-middle" data-include="views/page-content/content-middle" class="page-content"></div>
+        <div class="page-content-right" data-include="views/page-content/content-right" class="page-content"></div>
+    </div>
     <script src="./assets/js/script.js"></script>
 </body>
 </html>
