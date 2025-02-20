@@ -1,0 +1,21 @@
+.page-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    padding: 10px;
+    &-left {
+        flex: 25% 0 0;
+        background-color: beige;
+        max-width: 360px;
+    }
+    &-middle {
+        flex: 50% 0 0;
+        background-color: aqua;
+        max-width: 680px;
+    }
+    &-right {
+        flex: 25% 0 0;
+        background-color: beige;
+        max-width: 360px;
+    }
+}

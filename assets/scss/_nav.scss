@@ -1,0 +1,22 @@
+nav {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 3px 8px #0000000d;
+    & .nav-left {
+        flex: 25% 0 0;
+        background-color: beige;
+        max-width: 360px;
+    }
+    & .nav-middle {
+        flex: 50% 0 0;
+        background-color: aqua;
+        max-width: 680px;
+    }
+    & .nav-right {
+        flex: 25% 0 0;
+        background-color: beige;
+        max-width: 360px;
+    }
+}
