@@ -13,6 +13,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: top;
+  gap: 0.625rem;
   padding: 0.625rem;
 }
 .page-content-left {
@@ -36,11 +37,11 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 0.625rem;
   box-shadow: 0 0.1875rem 0.5rem rgba(0, 0, 0, 0.0509803922);
 }
 nav .nav-left {
   flex: 25% 0 0;
-  background-color: beige;
   max-width: 22.5rem;
 }
 nav .nav-middle {
@@ -52,4 +53,22 @@ nav .nav-right {
   flex: 25% 0 0;
   background-color: beige;
   max-width: 22.5rem;
+}
+nav .input-box-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.625rem;
+  margin-left: 0.625rem;
+}
+nav .input-box-text label {
+  width: 100%;
+}
+nav .input-box-text input {
+  border: none;
+  height: 2.5rem;
+  padding: 1.25rem;
+  border-radius: 1.25rem;
+  background-color: #efefef;
+  font-size: 0.9375rem;
 }

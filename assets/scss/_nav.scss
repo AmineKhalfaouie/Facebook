@@ -4,7 +4,6 @@ nav {
     box-shadow: 0 rem(3) rem(8) #0000000d;
     & .nav-left {
         flex: 25% 0 0;
-        background-color: beige;
         max-width: $sidebar-width;
     }
     & .nav-middle {
@@ -16,5 +15,18 @@ nav {
         flex: 25% 0 0;
         background-color: beige;
         max-width: $sidebar-width;
+    }
+
+    .input-box {
+        &-text {
+            @include flex(space-between, center);
+            margin-left: rem(10);
+            label {width: 100%;}
+            input {
+                // width: inherit;
+                @include round-box(40, #efefef);
+                font-size: rem(15);
+            }
+        }
     }
 }

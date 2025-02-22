@@ -32,8 +32,17 @@ body {
     font-family: $primary-font;
 }
 
-@mixin flex($justify, $align) {
+@mixin flex($justify: center, $align: centr, $gap: rem(10)) {
     display: flex;
     justify-content: $justify;
     align-items: $align;
+    gap: $gap;
+}
+
+@mixin round-box($size, $background) {
+    border: none;
+    height: rem($size);
+    padding: rem($size / 2);
+    border-radius: rem($size / 2);
+    background-color: $background;
 }
