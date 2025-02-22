@@ -1,21 +1,19 @@
 .page-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: top;
-    padding: 10px;
+    @include flex(space-between, top);
+    padding: $primary-padding;
     &-left {
         flex: 25% 0 0;
         background-color: beige;
-        max-width: 360px;
+        max-width: $sidebar-width;
     }
     &-middle {
         flex: 50% 0 0;
         background-color: aqua;
-        max-width: 680px;
+        max-width: $feed-width;
     }
     &-right {
         flex: 25% 0 0;
         background-color: beige;
-        max-width: 360px;
+        max-width: $sidebar-width;
     }
 }

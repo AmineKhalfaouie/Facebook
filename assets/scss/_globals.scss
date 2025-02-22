@@ -1,0 +1,39 @@
+//px to rem
+@function rem($pxVal) {
+    @if type-of($pxVal) == "number" and unitless($pxVal) {
+        @return ($pxVal / 16) + rem;
+    }
+    @return $pxVal;
+}
+
+//FONTS
+$primary-font: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
+
+//COLORS
+$primary-background: #f0f0f0;
+$icon-color: #656565;
+$icon-background-color: #e4e4e4;
+$active-color: #1b75e5;
+
+//SIZES
+$primary-padding: rem(10);
+$sidebar-width: rem(360);
+$feed-width: rem(680);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+//mettre tous les elements 0 de padding et de margin dans tous les coutes pour assure une grand espace
+
+body {
+    background-color: $primary-background;
+    font-family: $primary-font;
+}
+
+@mixin flex($justify, $align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}

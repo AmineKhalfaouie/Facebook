@@ -1,22 +1,20 @@
 nav {
     background-color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 3px 8px #0000000d;
+    @include flex(space-between, center);
+    box-shadow: 0 rem(3) rem(8) #0000000d;
     & .nav-left {
         flex: 25% 0 0;
         background-color: beige;
-        max-width: 360px;
+        max-width: $sidebar-width;
     }
     & .nav-middle {
         flex: 50% 0 0;
         background-color: aqua;
-        max-width: 680px;
+        max-width: $feed-width;
     }
     & .nav-right {
         flex: 25% 0 0;
         background-color: beige;
-        max-width: 360px;
+        max-width: $sidebar-width;
     }
 }
