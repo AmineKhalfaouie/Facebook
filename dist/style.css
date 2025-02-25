@@ -46,7 +46,6 @@ nav .nav-left {
 }
 nav .nav-middle {
   flex: 50% 0 0;
-  background-color: aqua;
   max-width: 42.5rem;
 }
 nav .nav-right {
@@ -71,4 +70,15 @@ nav .input-box-text input {
   border-radius: 1.25rem;
   background-color: #efefef;
   font-size: 0.9375rem;
+}
+nav .facebook-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0.625rem;
+  font-size: 1.8rem;
+  color: #656565;
+}
+nav .facebook-icons .active {
+  color: #1b75e5;
 }

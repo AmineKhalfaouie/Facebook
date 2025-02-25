@@ -8,7 +8,6 @@ nav {
     }
     & .nav-middle {
         flex: 50% 0 0;
-        background-color: aqua;
         max-width: $feed-width;
     }
     & .nav-right {
@@ -27,6 +26,16 @@ nav {
                 @include round-box(40, #efefef);
                 font-size: rem(15);
             }
+        }
+    }
+
+    .facebook-icons {
+        @include flex(space-around, center);
+        font-size: 1.8rem;
+        color: $icon-color;
+
+        .active {
+            color: $active-color;
         }
     }
 }
