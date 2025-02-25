@@ -12,7 +12,6 @@ nav {
     }
     & .nav-right {
         flex: 25% 0 0;
-        background-color: beige;
         max-width: $sidebar-width;
     }
 
@@ -36,6 +35,21 @@ nav {
 
         .active {
             color: $active-color;
+        }
+    }
+
+    .facebook-services {
+        @include flex(center, center);
+
+        .img-rounded {
+            @include img_rounded(40);
+        }
+
+        &-service {
+            @include flex(center, center);
+            @include circle-icon(40);
+            background-color: $icon-background-color;
+            font-size: 1.4rem;
         }
     }
 }

@@ -50,7 +50,6 @@ nav .nav-middle {
 }
 nav .nav-right {
   flex: 25% 0 0;
-  background-color: beige;
   max-width: 22.5rem;
 }
 nav .input-box-text {
@@ -81,4 +80,27 @@ nav .facebook-icons {
 }
 nav .facebook-icons .active {
   color: #1b75e5;
+}
+nav .facebook-services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+}
+nav .facebook-services .img-rounded {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+nav .facebook-services-service {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: #e4e4e4;
+  font-size: 1.4rem;
 }

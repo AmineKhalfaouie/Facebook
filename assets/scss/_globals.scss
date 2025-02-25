@@ -46,3 +46,16 @@ body {
     border-radius: rem($size / 2);
     background-color: $background;
 }
+
+@mixin img_rounded($size) {
+    width: rem($size);
+    height: rem($size);
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+@mixin circle-icon($size) {
+    width: rem($size);
+    height: rem($size);
+    border-radius: 50%;
+}
