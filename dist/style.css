@@ -72,7 +72,7 @@ nav .input-box-text input {
 }
 nav .facebook-icons {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   gap: 0.625rem;
   font-size: 1.8rem;
@@ -80,6 +80,9 @@ nav .facebook-icons {
 }
 nav .facebook-icons .active {
   color: #1b75e5;
+}
+nav .facebook-icons-icon {
+  margin: 0.625rem 2.1875rem;
 }
 nav .facebook-services {
   display: flex;

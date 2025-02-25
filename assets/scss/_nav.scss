@@ -29,12 +29,16 @@ nav {
     }
 
     .facebook-icons {
-        @include flex(space-around, center);
+        @include flex(center, center);
         font-size: 1.8rem;
         color: $icon-color;
 
         .active {
             color: $active-color;
+        }
+
+        &-icon {
+            margin: rem(10) rem(35);
         }
     }
 
