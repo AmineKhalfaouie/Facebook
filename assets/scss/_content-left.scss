@@ -1,0 +1,31 @@
+%content-left {
+    @include flex(left, center, rem(5));
+    padding: rem(5) 0;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.facebook-shortcuts {
+    &-shortcut {
+        @extend %content-left;
+        i {
+            color: $active-color;
+            font-size: 1.4rem;
+        }
+    }
+}
+.seperator {
+    border-top: 1px solid #ccc;
+    padding: $primary-padding 0;
+    margin: $primary-margin;
+}
+.facebook-favorites {
+    &-favorite {
+        @extend %content-left;
+        .favorite-image {
+            img {
+                @include img_rounded(40);
+            }
+        }
+    }
+}
