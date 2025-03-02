@@ -1,0 +1,27 @@
+.stories {
+    @include flex(center, center);
+    .story {
+        @include flex(space-between, flex-start);
+        flex-direction: column;
+        width: rem(100);
+        height: rem(180);
+        border-radius: rem(10);
+        background: url('/assets/images/pexels-francesco-ungaro-2325447.jpg') no-repeat center center;
+        background-size: cover;
+        margin: unset;
+        padding: rem(10);
+        background-color: #00000020;
+        background-blend-mode: multiply;
+
+        img{
+            @include img_rounded(40);
+            border: rem(5) solid $active-color;
+        }
+
+        &-username {
+            color: white;
+            font-weight: bold;
+            font-size: .8rem;
+        }
+    }
+}

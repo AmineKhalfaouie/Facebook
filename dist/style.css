@@ -133,6 +133,41 @@ nav .facebook-services-service {
   object-fit: cover;
 }
 
+.stories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+}
+.stories .story {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.625rem;
+  flex-direction: column;
+  width: 6.25rem;
+  height: 11.25rem;
+  border-radius: 0.625rem;
+  background: url("/assets/images/pexels-francesco-ungaro-2325447.jpg") no-repeat center center;
+  background-size: cover;
+  margin: unset;
+  padding: 0.625rem;
+  background-color: rgba(0, 0, 0, 0.1254901961);
+  background-blend-mode: multiply;
+}
+.stories .story img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 0.3125rem solid #1b75e5;
+}
+.stories .story-username {
+  color: white;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
 .facebook-sponsers-sponsor {
   display: flex;
   justify-content: space-between;
