@@ -15,19 +15,6 @@ nav {
         max-width: $sidebar-width;
     }
 
-    .input-box {
-        &-text {
-            @include flex(space-between, center);
-            margin-left: rem(10);
-            label {width: 100%;}
-            input {
-                // width: inherit;
-                @include round-box(40, #efefef);
-                font-size: rem(15);
-            }
-        }
-    }
-
     .facebook-icons {
         @include flex(center, center);
         font-size: 1.8rem;

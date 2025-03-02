@@ -9,6 +9,25 @@ body {
   font-family: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
 }
 
+.input-box-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.625rem;
+  margin-left: 0.625rem;
+}
+.input-box-text label {
+  width: 100%;
+}
+.input-box-text input {
+  border: none;
+  height: 2.5rem;
+  padding: 1.25rem;
+  border-radius: 1.25rem;
+  background-color: #efefef;
+  font-size: 0.9375rem;
+}
+
 .facebook-contacts-contact, .facebook-pages-page, .facebook-favorites-favorite, .facebook-shortcuts-shortcut {
   display: flex;
   justify-content: left;
@@ -58,24 +77,6 @@ nav .nav-middle {
 nav .nav-right {
   flex: 25% 0 0;
   max-width: 22.5rem;
-}
-nav .input-box-text {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 0.625rem;
-  margin-left: 0.625rem;
-}
-nav .input-box-text label {
-  width: 100%;
-}
-nav .input-box-text input {
-  border: none;
-  height: 2.5rem;
-  padding: 1.25rem;
-  border-radius: 1.25rem;
-  background-color: #efefef;
-  font-size: 0.9375rem;
 }
 nav .facebook-icons {
   display: flex;
@@ -166,6 +167,42 @@ nav .facebook-services-service {
   color: white;
   font-weight: bold;
   font-size: 0.8rem;
+}
+
+.create-post {
+  background-color: white;
+  margin: 1.25rem auto;
+  padding: 0.9375rem;
+  border-radius: 0.625rem;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1254901961);
+}
+.create-post-image {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.create-post input {
+  width: inherit;
+}
+.create-post-options {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0.625rem;
+  margin-top: 0.625rem;
+  padding-top: 0.625rem;
+  border-top: 2px solid #e4e4e4;
+}
+.create-post-options-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.625rem;
+  font-size: 1.125rem;
+}
+.create-post-options-option span {
+  color: #656565;
 }
 
 .facebook-sponsers-sponsor {

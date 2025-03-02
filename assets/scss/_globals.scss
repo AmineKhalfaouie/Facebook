@@ -61,6 +61,26 @@ body {
     border-radius: 50%;
 }
 
+@mixin component-box($margin: unset, $padding: unset, $radius: unset) {
+    margin: rem($margin) auto;
+    padding: rem($padding);
+    border-radius: rem($radius);
+    box-shadow: 0 2px 2px #00000020;
+}
+
+.input-box {
+    &-text {
+        @include flex(space-between, center);
+        margin-left: rem(10);
+        label {width: 100%;}
+        input {
+            // width: inherit;
+            @include round-box(40, #efefef);
+            font-size: rem(15);
+        }
+    }
+}
+
 %content-component {
     @include flex(left, center, rem(5));
     padding: rem(5) 0;

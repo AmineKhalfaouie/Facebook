@@ -1,0 +1,28 @@
+.create-post {
+    background-color: white;
+    @include component-box(20, 15, 10);
+
+    &-image {
+        @include img_rounded(40);
+    }
+
+    input {
+        width: inherit;
+    }
+
+    &-options {
+        @include flex(space-around, center);
+        margin-top: rem(10);
+        padding-top: rem(10);
+        border-top: 2px solid #e4e4e4;
+
+        &-option {
+            @include flex(space-between, center);
+            font-size: rem(18);
+
+            span {
+                color: #656565;
+            }
+        }
+    }
+}
