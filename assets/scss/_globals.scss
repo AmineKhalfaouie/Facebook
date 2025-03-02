@@ -33,7 +33,7 @@ body {
     font-family: $primary-font;
 }
 
-@mixin flex($justify: center, $align: centr, $gap: rem(10)) {
+@mixin flex($justify: center, $align: center, $gap: rem(10)) {
     display: flex;
     justify-content: $justify;
     align-items: $align;
@@ -59,4 +59,11 @@ body {
     width: rem($size);
     height: rem($size);
     border-radius: 50%;
+}
+
+%content-component {
+    @include flex(left, center, rem(5));
+    padding: rem(5) 0;
+    font-size: 1rem;
+    font-weight: 500;
 }

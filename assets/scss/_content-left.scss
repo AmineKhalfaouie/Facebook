@@ -1,13 +1,6 @@
-%content-left {
-    @include flex(left, center, rem(5));
-    padding: rem(5) 0;
-    font-size: 1rem;
-    font-weight: 500;
-}
-
 .facebook-shortcuts {
     &-shortcut {
-        @extend %content-left;
+        @extend %content-component;
         i {
             color: $active-color;
             font-size: 1.4rem;
@@ -21,7 +14,7 @@
 }
 .facebook-favorites {
     &-favorite {
-        @extend %content-left;
+        @extend %content-component;
         .favorite-image {
             img {
                 @include img_rounded(40);

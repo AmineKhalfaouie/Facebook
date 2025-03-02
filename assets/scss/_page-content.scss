@@ -7,12 +7,10 @@
     }
     &-middle {
         flex: 50% 0 0;
-        background-color: aqua;
         max-width: $feed-width;
     }
     &-right {
         flex: 25% 0 0;
-        background-color: beige;
         max-width: $sidebar-width;
     }
 }

@@ -9,6 +9,16 @@ body {
   font-family: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
 }
 
+.facebook-contacts-contact, .facebook-pages-page, .facebook-favorites-favorite, .facebook-shortcuts-shortcut {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 0.3125rem;
+  padding: 0.3125rem 0;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
 .page-content {
   display: flex;
   justify-content: space-between;
@@ -22,12 +32,10 @@ body {
 }
 .page-content-middle {
   flex: 50% 0 0;
-  background-color: aqua;
   max-width: 42.5rem;
 }
 .page-content-right {
   flex: 25% 0 0;
-  background-color: beige;
   max-width: 22.5rem;
 }
 
@@ -107,16 +115,6 @@ nav .facebook-services-service {
   font-size: 1.4rem;
 }
 
-.facebook-favorites-favorite, .facebook-shortcuts-shortcut {
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  gap: 0.3125rem;
-  padding: 0.3125rem 0;
-  font-size: 1rem;
-  font-weight: 500;
-}
-
 .facebook-shortcuts-shortcut i {
   color: #1b75e5;
   font-size: 1.4rem;
@@ -129,6 +127,32 @@ nav .facebook-services-service {
 }
 
 .facebook-favorites-favorite .favorite-image img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.facebook-sponsers-sponsor {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.625rem;
+  margin: 0.625rem 0;
+}
+.facebook-sponsers-sponsor img {
+  max-width: 115px;
+  border-radius: 0.3125rem;
+}
+
+.facebook-pages-page img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.facebook-contacts-contact img {
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;
