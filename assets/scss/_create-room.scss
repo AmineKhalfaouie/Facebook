@@ -1,0 +1,21 @@
+.create-room {
+    @include component-box(10, 15);
+    @include flex(space-around, center);
+    background-color: white;
+
+    &-image {
+        @include img_rounded(40);
+    }
+
+    &-button {
+        @include flex(space-between, center);
+        border: 2px solid #efefef;
+        padding: rem(5) rem(10);
+        font-size: rem(18);
+        border-radius: rem(25);
+
+        i {color: rgb(206, 25, 25);}
+    }
+
+    span {color: #656565;}
+}

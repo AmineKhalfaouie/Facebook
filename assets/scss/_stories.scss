@@ -1,17 +1,37 @@
 .stories {
     @include flex(center, center);
+
+    .story:nth-child(1) {
+        @include story_image('/assets/images/pexels-francesco-ungaro-2325447.jpg');
+    }
+
+    .story:nth-child(2) {
+        @include story_image('/assets/images/pexels-jonaskakaroto-736230.jpg');
+    }
+
+    .story:nth-child(3) {
+        @include story_image('/assets/images/pexels-m-venter-792254-1659438.jpg');
+    }
+
+    .story:nth-child(4) {
+        @include story_image('/assets/images/pexels-pawelkalisinski-1076758.jpg');
+    }
+
+    .story:nth-child(5) {
+        @include story_image('/assets/images/pexels-pixabay-247599.jpg');
+    }
+
+    .story:nth-child(6) {
+        @include story_image('/assets/images/pexels-sebastian-palomino-933481-1955134.jpg');
+    }
     .story {
         @include flex(space-between, flex-start);
         flex-direction: column;
         width: rem(100);
         height: rem(180);
         border-radius: rem(10);
-        background: url('/assets/images/pexels-francesco-ungaro-2325447.jpg') no-repeat center center;
-        background-size: cover;
         margin: unset;
         padding: rem(10);
-        background-color: #00000020;
-        background-blend-mode: multiply;
 
         img{
             @include img_rounded(40);

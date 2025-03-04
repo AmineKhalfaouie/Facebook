@@ -140,6 +140,42 @@ nav .facebook-services-service {
   align-items: center;
   gap: 0.625rem;
 }
+.stories .story:nth-child(1) {
+  background: url("/assets/images/pexels-francesco-ungaro-2325447.jpg") no-repeat center center;
+  background-color: rgba(0, 0, 0, 0.1254901961);
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+.stories .story:nth-child(2) {
+  background: url("/assets/images/pexels-jonaskakaroto-736230.jpg") no-repeat center center;
+  background-color: rgba(0, 0, 0, 0.1254901961);
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+.stories .story:nth-child(3) {
+  background: url("/assets/images/pexels-m-venter-792254-1659438.jpg") no-repeat center center;
+  background-color: rgba(0, 0, 0, 0.1254901961);
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+.stories .story:nth-child(4) {
+  background: url("/assets/images/pexels-pawelkalisinski-1076758.jpg") no-repeat center center;
+  background-color: rgba(0, 0, 0, 0.1254901961);
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+.stories .story:nth-child(5) {
+  background: url("/assets/images/pexels-pixabay-247599.jpg") no-repeat center center;
+  background-color: rgba(0, 0, 0, 0.1254901961);
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+.stories .story:nth-child(6) {
+  background: url("/assets/images/pexels-sebastian-palomino-933481-1955134.jpg") no-repeat center center;
+  background-color: rgba(0, 0, 0, 0.1254901961);
+  background-size: cover;
+  background-blend-mode: multiply;
+}
 .stories .story {
   display: flex;
   justify-content: space-between;
@@ -149,12 +185,8 @@ nav .facebook-services-service {
   width: 6.25rem;
   height: 11.25rem;
   border-radius: 0.625rem;
-  background: url("/assets/images/pexels-francesco-ungaro-2325447.jpg") no-repeat center center;
-  background-size: cover;
   margin: unset;
   padding: 0.625rem;
-  background-color: rgba(0, 0, 0, 0.1254901961);
-  background-blend-mode: multiply;
 }
 .stories .story img {
   width: 2.5rem;
@@ -202,6 +234,52 @@ nav .facebook-services-service {
   font-size: 1.125rem;
 }
 .create-post-options-option span {
+  color: #656565;
+}
+.create-post-options-option i {
+  font-size: 1.8rem;
+}
+.create-post-options-option:nth-child(1) {
+  color: #c53434;
+}
+.create-post-options-option:nth-child(2) {
+  color: #19aa19;
+}
+.create-post-options-option:nth-child(3) {
+  color: #d89415;
+}
+
+.create-room {
+  margin: 0.625rem auto;
+  padding: 0.9375rem;
+  border-radius: unset;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1254901961);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0.625rem;
+  background-color: white;
+}
+.create-room-image {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.create-room-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.625rem;
+  border: 2px solid #efefef;
+  padding: 0.3125rem 0.625rem;
+  font-size: 1.125rem;
+  border-radius: 1.5625rem;
+}
+.create-room-button i {
+  color: rgb(206, 25, 25);
+}
+.create-room span {
   color: #656565;
 }
 

@@ -81,6 +81,13 @@ body {
     }
 }
 
+@mixin story_image($image) {
+    background: url($image) no-repeat center center;
+    background-color: #00000020;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
 %content-component {
     @include flex(left, center, rem(5));
     padding: rem(5) 0;
