@@ -1,0 +1,31 @@
+.news-feed {
+    @include component-box(10, 15);
+    background-color: white;
+
+    &-header {
+        @include flex(space-between, center);
+        >div:nth-child(2) {
+            flex: 1;
+        }
+        &-post-userimage img{
+            @include img_rounded(40);
+        }
+
+        &-post-meta {
+            &-name {font-weight: 600;}
+
+            &-info {
+                @include flex(left, center, 5);
+            }
+
+            &-options {
+                font-weight: bold;
+                font-size: 2rem;
+                position: relative;
+                cursor: pointer;
+                top: rem(-15);
+                line-height: 0;
+            }
+        }
+    }
+}

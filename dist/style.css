@@ -283,6 +283,46 @@ nav .facebook-services-service {
   color: #656565;
 }
 
+.news-feed {
+  margin: 0.625rem auto;
+  padding: 0.9375rem;
+  border-radius: unset;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1254901961);
+  background-color: white;
+}
+.news-feed-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.625rem;
+}
+.news-feed-header > div:nth-child(2) {
+  flex: 1;
+}
+.news-feed-header-post-userimage img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.news-feed-header-post-meta-name {
+  font-weight: 600;
+}
+.news-feed-header-post-meta-info {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 5;
+}
+.news-feed-header-post-meta-options {
+  font-weight: bold;
+  font-size: 2rem;
+  position: relative;
+  cursor: pointer;
+  top: -0.9375rem;
+  line-height: 0;
+}
+
 .facebook-sponsers-sponsor {
   display: flex;
   justify-content: space-between;
