@@ -53,12 +53,14 @@ body {
     height: rem($size);
     border-radius: 50%;
     object-fit: cover;
+    cursor: pointer;
 }
 
 @mixin circle-icon($size) {
     width: rem($size);
     height: rem($size);
     border-radius: 50%;
+    cursor: pointer;
 }
 
 @mixin component-box($margin: unset, $padding: unset, $radius: unset) {
@@ -86,6 +88,7 @@ body {
     background-color: #00000020;
     background-size: cover;
     background-blend-mode: multiply;
+    cursor: pointer;
 }
 
 %content-component {

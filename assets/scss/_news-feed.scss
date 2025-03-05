@@ -1,8 +1,9 @@
 .news-feed {
-    @include component-box(10, 15);
+    @include component-box(10,15);
     background-color: white;
-
-    &-header {
+    border-radius: rem(10);
+    margin-top: calc($primary-margin * 2);
+    &-header{
         @include flex(space-between, center);
         >div:nth-child(2) {
             flex: 1;
@@ -26,6 +27,39 @@
                 top: rem(-15);
                 line-height: 0;
             }
+        }
+    }
+
+    &-feed {
+        &-image, &-text {margin-top: $primary-margin;}
+
+        &-image {
+            border-radius: rem(10);
+        }
+    }
+
+    &-footer {
+        @include flex(space-between, center);
+        &-reactions {
+            font-size: 1.4rem;
+            >i:nth-child(1) {color: $active-color;}
+            >i:nth-child(2) {color: red;}
+            >i:nth-child(3) {color: rgb(207, 141, 18)}
+        }
+    }
+
+    &-comment-box {
+        padding: $primary-padding;
+        margin-left: 0;
+
+        .input-box-text input {
+            @include round-box(30, #efefef);
+            font-size: .8rem;
+            width: 100%;
+        }
+
+        img {
+            @include img_rounded(40);
         }
     }
 }

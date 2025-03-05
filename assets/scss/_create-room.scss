@@ -1,9 +1,11 @@
 .create-room {
-    @include component-box(10, 15);
-    @include flex(space-around, center);
+    @include component-box(10,15);
+    @include flex(space-around,center);
     background-color: white;
+    border-radius: rem(10);
 
-    &-image {
+    &-image
+    {
         @include img_rounded(40);
     }
 

@@ -103,6 +103,7 @@ nav .facebook-services .img-rounded {
   height: 2.5rem;
   border-radius: 50%;
   object-fit: cover;
+  cursor: pointer;
 }
 nav .facebook-services-service {
   display: flex;
@@ -112,6 +113,7 @@ nav .facebook-services-service {
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;
+  cursor: pointer;
   background-color: #e4e4e4;
   font-size: 1.4rem;
 }
@@ -132,6 +134,7 @@ nav .facebook-services-service {
   height: 2.5rem;
   border-radius: 50%;
   object-fit: cover;
+  cursor: pointer;
 }
 
 .stories {
@@ -145,36 +148,42 @@ nav .facebook-services-service {
   background-color: rgba(0, 0, 0, 0.1254901961);
   background-size: cover;
   background-blend-mode: multiply;
+  cursor: pointer;
 }
 .stories .story:nth-child(2) {
   background: url("/assets/images/pexels-jonaskakaroto-736230.jpg") no-repeat center center;
   background-color: rgba(0, 0, 0, 0.1254901961);
   background-size: cover;
   background-blend-mode: multiply;
+  cursor: pointer;
 }
 .stories .story:nth-child(3) {
   background: url("/assets/images/pexels-m-venter-792254-1659438.jpg") no-repeat center center;
   background-color: rgba(0, 0, 0, 0.1254901961);
   background-size: cover;
   background-blend-mode: multiply;
+  cursor: pointer;
 }
 .stories .story:nth-child(4) {
   background: url("/assets/images/pexels-pawelkalisinski-1076758.jpg") no-repeat center center;
   background-color: rgba(0, 0, 0, 0.1254901961);
   background-size: cover;
   background-blend-mode: multiply;
+  cursor: pointer;
 }
 .stories .story:nth-child(5) {
   background: url("/assets/images/pexels-pixabay-247599.jpg") no-repeat center center;
   background-color: rgba(0, 0, 0, 0.1254901961);
   background-size: cover;
   background-blend-mode: multiply;
+  cursor: pointer;
 }
 .stories .story:nth-child(6) {
   background: url("/assets/images/pexels-sebastian-palomino-933481-1955134.jpg") no-repeat center center;
   background-color: rgba(0, 0, 0, 0.1254901961);
   background-size: cover;
   background-blend-mode: multiply;
+  cursor: pointer;
 }
 .stories .story {
   display: flex;
@@ -193,6 +202,7 @@ nav .facebook-services-service {
   height: 2.5rem;
   border-radius: 50%;
   object-fit: cover;
+  cursor: pointer;
   border: 0.3125rem solid #1b75e5;
 }
 .stories .story-username {
@@ -213,6 +223,7 @@ nav .facebook-services-service {
   height: 2.5rem;
   border-radius: 50%;
   object-fit: cover;
+  cursor: pointer;
 }
 .create-post input {
   width: inherit;
@@ -259,12 +270,14 @@ nav .facebook-services-service {
   align-items: center;
   gap: 0.625rem;
   background-color: white;
+  border-radius: 0.625rem;
 }
 .create-room-image {
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;
   object-fit: cover;
+  cursor: pointer;
 }
 .create-room-button {
   display: flex;
@@ -289,6 +302,8 @@ nav .facebook-services-service {
   border-radius: unset;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1254901961);
   background-color: white;
+  border-radius: 0.625rem;
+  margin-top: calc(0.625rem * 2);
 }
 .news-feed-header {
   display: flex;
@@ -304,6 +319,7 @@ nav .facebook-services-service {
   height: 2.5rem;
   border-radius: 50%;
   object-fit: cover;
+  cursor: pointer;
 }
 .news-feed-header-post-meta-name {
   font-weight: 600;
@@ -321,6 +337,50 @@ nav .facebook-services-service {
   cursor: pointer;
   top: -0.9375rem;
   line-height: 0;
+}
+.news-feed-feed-image, .news-feed-feed-text {
+  margin-top: 0.625rem;
+}
+.news-feed-feed-image {
+  border-radius: 0.625rem;
+}
+.news-feed-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.625rem;
+}
+.news-feed-footer-reactions {
+  font-size: 1.4rem;
+}
+.news-feed-footer-reactions > i:nth-child(1) {
+  color: #1b75e5;
+}
+.news-feed-footer-reactions > i:nth-child(2) {
+  color: red;
+}
+.news-feed-footer-reactions > i:nth-child(3) {
+  color: rgb(207, 141, 18);
+}
+.news-feed-comment-box {
+  padding: 0.625rem;
+  margin-left: 0;
+}
+.news-feed-comment-box .input-box-text input {
+  border: none;
+  height: 1.875rem;
+  padding: 0.9375rem;
+  border-radius: 0.9375rem;
+  background-color: #efefef;
+  font-size: 0.8rem;
+  width: 100%;
+}
+.news-feed-comment-box img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
 }
 
 .facebook-sponsers-sponsor {
@@ -340,6 +400,7 @@ nav .facebook-services-service {
   height: 2.5rem;
   border-radius: 50%;
   object-fit: cover;
+  cursor: pointer;
 }
 
 .facebook-contacts-contact img {
@@ -347,4 +408,5 @@ nav .facebook-services-service {
   height: 2.5rem;
   border-radius: 50%;
   object-fit: cover;
+  cursor: pointer;
 }
