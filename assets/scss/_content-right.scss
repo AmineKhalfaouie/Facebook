@@ -1,28 +1,31 @@
-.facebook-sponsers {
-    &-sponsor {
-        @include flex(space-between, flex-start);
-        margin: rem(10) 0;
-        img {
-            max-width: 115px;
-            border-radius: rem(5);
+.wrapper {
+    .facebook-sponsers {
+        &-sponsor {
+            @include flex(space-between, flex-start);
+            margin: rem(10) 0;
+            img {
+                max-width: 115px;
+                border-radius: rem(5);
+            }
         }
     }
-}
-
-.facebook-pages {
-    &-page {
-        @extend %content-component;
-        img {
-            @include img_rounded(40);
+    
+    .facebook-pages {
+        &-page {
+            @extend %content-component;
+            img {
+                @include img_rounded(40);
+            }
         }
     }
-}
-
-.facebook-contacts {
-    &-contact {
-        @extend %content-component;
-        img {
-            @include img_rounded(40);
+    
+    .facebook-contacts {
+        &-contact {
+            @extend %content-component;
+            img {
+                @include img_rounded(40);
+            }
         }
     }
+    
 }

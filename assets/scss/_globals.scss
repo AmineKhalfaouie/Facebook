@@ -31,6 +31,20 @@ $feed-width: rem(680);
 body {
     background-color: $primary-background;
     font-family: $primary-font;
+    &::before {
+        content: "";
+        display: block;
+        height: rem(70);
+    }
+}
+
+.page-content {
+    &-right, &-left {
+        .wrapper {
+            position: sticky;
+            top: rem(70);
+        }
+    }
 }
 
 @mixin flex($justify: center, $align: center, $gap: rem(10)) {

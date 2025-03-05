@@ -8,6 +8,16 @@ body {
   background-color: #f0f0f0;
   font-family: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
 }
+body::before {
+  content: "";
+  display: block;
+  height: 4.375rem;
+}
+
+.page-content-right .wrapper, .page-content-left .wrapper {
+  position: sticky;
+  top: 4.375rem;
+}
 
 .input-box-text {
   display: flex;
@@ -28,7 +38,7 @@ body {
   font-size: 0.9375rem;
 }
 
-.facebook-contacts-contact, .facebook-pages-page, .facebook-favorites-favorite, .facebook-shortcuts-shortcut {
+.wrapper .facebook-contacts-contact, .wrapper .facebook-pages-page, .facebook-favorites-favorite, .facebook-shortcuts-shortcut {
   display: flex;
   justify-content: left;
   align-items: center;
@@ -65,6 +75,10 @@ nav {
   align-items: center;
   gap: 0.625rem;
   box-shadow: 0 0.1875rem 0.5rem rgba(0, 0, 0, 0.0509803922);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 nav .nav-left {
   flex: 25% 0 0;
@@ -383,27 +397,25 @@ nav .facebook-services-service {
   cursor: pointer;
 }
 
-.facebook-sponsers-sponsor {
+.wrapper .facebook-sponsers-sponsor {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   gap: 0.625rem;
   margin: 0.625rem 0;
 }
-.facebook-sponsers-sponsor img {
+.wrapper .facebook-sponsers-sponsor img {
   max-width: 115px;
   border-radius: 0.3125rem;
 }
-
-.facebook-pages-page img {
+.wrapper .facebook-pages-page img {
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;
   object-fit: cover;
   cursor: pointer;
 }
-
-.facebook-contacts-contact img {
+.wrapper .facebook-contacts-contact img {
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;

@@ -2,6 +2,11 @@ nav {
     background-color: white;
     @include flex(space-between, center);
     box-shadow: 0 rem(3) rem(8) #0000000d;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+
     & .nav-left {
         flex: 25% 0 0;
         max-width: $sidebar-width;
